@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Bankrid:$HF_TOKEN@huggingface.co/spaces/Bankrid/huggingface-app main
+        run: git push --force https://Bankrid:$HF_TOKEN@huggingface.co/spaces/Bankrid/huggingface-app main
