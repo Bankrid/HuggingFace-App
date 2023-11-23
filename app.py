@@ -3,8 +3,8 @@ from langchain.llms import CTransformers
 from langchain.chains import LLMChain
 from langchain import PromptTemplate
 
-llm = CTransformers(model = "model\llama-2-7b-chat.ggmlv3.q2_K.bin",
-                    model_type = "llama",
+llm = CTransformers(model = "TheBloke/Llama-2-7B-Chat-GGML",
+                    model_file = "llama-2-7b-chat.ggmlv3.q2_K.bin",
                     config={'max_new_tokens':2000, "temperature":0.5, 'context_length' : 2048})
 
 def main():
